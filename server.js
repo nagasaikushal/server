@@ -13,9 +13,10 @@ const userotp = require('./models/user-otp')
 const genotp = require('./utils/generateOtp');
 const user = require('./models/user-model');
 const userRoute=require('./router/user-router');
+import config from './config';
 
 const corsOptions={
-    origin:"http://localhost:3000",
+    origin:`${config.url}`,
     methods:"GET,POST,PUT,DELETE,PATCH,HEAD",
     credentials:true,
 };
