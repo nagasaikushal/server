@@ -13,7 +13,7 @@ const userotp = require('./models/user-otp')
 const genotp = require('./utils/generateOtp');
 const user = require('./models/user-model');
 const userRoute=require('./router/user-router');
-import config from './config';
+const config=require("./config")
 
 const corsOptions={
     origin:`${config.url}`,
