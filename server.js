@@ -15,7 +15,7 @@ const user = require('./models/user-model');
 const userRoute=require('./router/user-router');
 
 const corsOptions={
-    origin:"http://localhost:3000",
+    origin:"http://localhost:5000",
     methods:"GET,POST,PUT,DELETE,PATCH,HEAD",
     credentials:true,
 };
